@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+    box-sizing: border-box;
+}
+nav{
+    width: 100%;
+    background-color:#f8f9fa;
+    padding: 8px 0px;
+    z-index: 12;
+    position: fixed;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+nav .menu{
+    max-width: 1250px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+
+}
+.menu .logo a{
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 600;
+    color: #222222;
+}
+.menu ul{
+    display: inline-flex;
+}
+.menu ul li{
+    list-style: none;
+    margin-left: 8px;
+}
+.menu ul li a{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 8px 20px;
+    color: #222222;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+
+ 
+}
+.menu ul li a:hover{
+    color: #f8f9fa;
+    background-color: #222222;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.img{
+    background: url(laptop.jpg) no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-position: inherit;
+    position: relative;
+    background-size: cover;
+}
+.img::before{
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.center{
+    position: absolute;
+    text-align: center;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+.center .title{
+    font-size: 30px;
+    font-weight: 500;
+    color: #f8f9fa;
+}
+.center .sub_title{
+    font-size: 20px;
+    font-weight: 400;
+    color: #f8f9fa;
+
+}
+.center .btns{
+    margin-top: 20px;
+}
+.center .btns button{
+    width:170px;
+    height: 55px;
+    padding: 0px 10px;
+    margin: 0 10px;
+    border: 3px solid  #f8f9fa;
+    outline: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    background: none;
+    color: #f8f9fa;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.center .btns button:hover{
+    color: #222222;
+    background:#f8f9fa ;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+}
+@media (max-width: 768px) {
+  .center .title {
+    font-size: 22px;
+  }
+
+  .center .sub_title {
+    font-size: 16px;
+  }
+
+  .center .btns button {
+    width: 140px;
+    height: 45px;
+    font-size: 14px;
+  }
+
+  .menu ul {
+    display: none; /* abhi ke liye simple hide kar do mobile pe */
+  }
+}
+
+
+
+
+
+
+
